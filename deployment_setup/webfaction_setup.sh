@@ -10,7 +10,7 @@ rm -r $HOME/webapps/$APPNAME/htdocs
 
 # Step 2 - create virtual env
 cd $HOME/webapps/$APPNAME/$APPNAME/
-virtualenv env
+virtualenv-2.7 env
 echo "run - source env/bin/activate from main folder"
 echo "run - pip install -r requirements.txt after you are in virtual env"
 

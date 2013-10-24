@@ -3,7 +3,7 @@ import os
 
 APPNAME="basic_app"
 URLPATH = "/basic"
-HOMEDIR = "engineroom"
+HOMEDIR = "rsam"
 
 sys.path.insert(0, '/home/' + HOMEDIR + '/webapps/' + APPNAME + '/' + APPNAME)
 activate_this = '/home/' + HOMEDIR + '/webapps/' + APPNAME + '/' + APPNAME + '/env/bin/activate_this.py'

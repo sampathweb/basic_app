@@ -27,7 +27,7 @@
 
 <div class="pure-g-r l-box">
 <div class="pure-u-1-2">
-    <form action="." method="post">
+    <form action="{{ url_for('.index') }}" method="post">
     {{ form.hidden_tag() }}
     {{ form.title(placeholder="Enter Task Name") }}
     {{ form.description(placeholder="Enter Task Description") }}
