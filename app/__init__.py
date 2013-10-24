@@ -11,4 +11,4 @@ app.config.from_object(__name__)
 # Intialize SQL Alchemy
 db = SQLAlchemy(app)
 
-from app.views import *
+import views
