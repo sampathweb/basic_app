@@ -1,11 +1,12 @@
-#import sys
+import sys
 import os
 
 APPNAME="basic_app"
 URLPATH = "/basic"
+HOMEDIR = "engineroom"
 
-#sys.path.insert(0, '~' + '/webapps/' + APPNAME + '/' + APPNAME)
-activate_this = '~' + '/webapps/' + APPNAME + '/' + APPNAME + '/env/bin/activate_this.py'
+sys.path.insert(0, '/home/' + HOMEDIR + '/webapps/' + APPNAME + '/' + APPNAME)
+activate_this = '/home/' + HOMEDIR + '/webapps/' + APPNAME + '/' + APPNAME + '/env/bin/activate_this.py'
 execfile(activate_this, {"__file__": activate_this})
 
 from app import app

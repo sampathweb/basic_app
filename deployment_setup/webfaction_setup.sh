@@ -11,8 +11,8 @@ rm -r $HOME/webapps/$APPNAME/htdocs
 # Step 2 - create virtual env
 cd $HOME/webapps/$APPNAME/$APPNAME/
 virtualenv env
-source env/bin/activate
-pip install -r requirements.txt
+echo "run - source env/bin/activate from main folder"
+echo "run - pip install -r requirements.txt after you are in virtual env"
 
 # Step 3 - configure the apache wsgi.py to point to our app
 sed -i "s^WSGILazyInitialization On^WSGILazyInitialization On\nWSGIScriptAlias / $HOME/webapps/$APPNAME/$APPNAME/wsgi.py^" $HOME/webapps/$APPNAME/apache2/conf/httpd.conf
